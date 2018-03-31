@@ -1,0 +1,37 @@
+# IntelliJ
+.idea/
+out/
+*.ipr
+*.iml
+*.iws
+
+# Eclipse
+.settings/
+classes/
+.classpath
+.project
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Maven
+log/
+target/
+
+# Gradle
+.gradle/
+build/
+!gradle/serialPortWrapper/*
+
+# WinMerge
+*.bak
+
+# Android
+local.properties
+gen-external-apklibs
+
+# Generated files
+gen
