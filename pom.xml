@@ -1,0 +1,25 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jogl-demos</groupId>
+    <artifactId>jogl-demos</artifactId>
+    <version>1</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>basic</module>
+        <module>jp4da-android</module>
+        <module>jp4da-core</module>
+        <module>jp4da-desktop</module>
+        <module>redbook</module>
+        <module>trivial-test</module>
+    </modules>
+
+</project>

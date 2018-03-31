@@ -1,0 +1,41 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jogl-demos</groupId>
+    <artifactId>jp4da-desktop</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>jogl-demos</groupId>
+        <artifactId>jogl-demos</artifactId>
+        <version>1</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>jogl-demos</groupId>
+            <artifactId>jp4da-core</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jogamp.jogl</groupId>
+                    <artifactId>jogl-all</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Depend on gluegen-main and jogl-all-main, which implicitly depend on all platform natives -->
+        <dependency>
+            <groupId>org.jogamp.gluegen</groupId>
+            <artifactId>gluegen-rt-main</artifactId>
+            <version>2.0-rc11post03</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jogamp.jogl</groupId>
+            <artifactId>jogl-all-main</artifactId>
+            <version>2.0-rc11post03</version>
+        </dependency>
+    </dependencies>
+
+</project>

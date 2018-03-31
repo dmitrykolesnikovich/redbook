@@ -1,0 +1,20 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jogl-demos</groupId>
+    <artifactId>redbook</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>jogl-demos</groupId>
+        <artifactId>jogl-demos</artifactId>
+        <version>1</version>
+    </parent>
+
+
+    <dependencies>
+
+    </dependencies>
+
+</project>
