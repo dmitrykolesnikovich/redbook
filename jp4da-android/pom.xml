@@ -1,23 +1,22 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>jogl-demos</groupId>
+    <groupId>redbook</groupId>
     <artifactId>jp4da-android</artifactId>
     <version>1</version>
     <packaging>apk</packaging>
 
-
     <parent>
-        <groupId>jogl-demos</groupId>
-        <artifactId>jogl-demos</artifactId>
+        <groupId>redbook</groupId>
+        <artifactId>redbook</artifactId>
         <version>1</version>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>com.io7m.examples.jp4da</groupId>
+            <groupId>redbook</groupId>
             <artifactId>jp4da-core</artifactId>
-            <version>1.0.0</version>
+            <version>1</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.jogamp.jogl</groupId>
@@ -28,35 +27,41 @@
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
-            <version>1.6_r2</version>
+            <version>4.4</version>
             <scope>provided</scope>
         </dependency>
         <!-- Depend on the gluegen runtime Android package -->
         <dependency>
             <groupId>org.jogamp.gluegen</groupId>
             <artifactId>gluegen-rt-android</artifactId>
-            <version>2.0-rc11post03</version>
+            <version>2.3.2</version>
         </dependency>
         <!-- Depend on the correct natives for Android -->
         <dependency>
             <groupId>org.jogamp.gluegen</groupId>
             <artifactId>gluegen-rt</artifactId>
-            <version>2.0-rc11post03</version>
+            <version>2.3.2</version>
             <classifier>natives-android-armv6</classifier>
         </dependency>
         <!-- Depend on the jogl Android package -->
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all-android</artifactId>
-            <version>2.0-rc11post03</version>
+            <version>2.3.2</version>
         </dependency>
         <!-- Depend on the correct natives for Android -->
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all</artifactId>
-            <version>2.0-rc11post03</version>
+            <version>2.3.2</version>
             <classifier>natives-android-armv6</classifier>
             <scope>runtime</scope>
+        </dependency>
+        <!---->
+        <dependency>
+            <groupId>newt</groupId>
+            <artifactId>newt-all</artifactId>
+            <version>1</version>
         </dependency>
     </dependencies>
 

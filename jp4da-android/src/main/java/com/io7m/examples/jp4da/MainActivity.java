@@ -28,7 +28,7 @@ public class MainActivity extends NewtBaseActivity {
             @Override
             public void mousePressed(
                     final MouseEvent e) {
-                if (e.getPressure() > 2f) { // show Keyboard
+                if (e.getPressure(true) > 2f) { // show Keyboard
                     ((com.jogamp.newt.Window) e.getSource()).setKeyboardVisible(true);
                 }
             }
@@ -38,20 +38,7 @@ public class MainActivity extends NewtBaseActivity {
 
         // demo.enableAndroidTrace(true);
         gl_window.addGLEventListener(example);
-        gl_window.getScreen().addScreenModeListener(new ScreenModeListener() {
-            @SuppressWarnings("unused")
-            public void screenModeChangeNotify(
-                    final ScreenMode sm) {
-                // Nothing.
-            }
 
-            @SuppressWarnings("unused")
-            public void screenModeChanged(
-                    final ScreenMode sm,
-                    final boolean success) {
-                System.err.println("ScreenMode Changed: " + sm);
-            }
-        });
 
         final Animator animator = new Animator(gl_window);
         this.setAnimator(animator);

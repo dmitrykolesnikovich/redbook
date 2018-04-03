@@ -1,8 +1,8 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>jogl-demos</groupId>
-    <artifactId>jogl-demos</artifactId>
+    <groupId>redbook</groupId>
+    <artifactId>redbook</artifactId>
     <version>1</version>
     <packaging>pom</packaging>
 
@@ -14,12 +14,12 @@
     </properties>
 
     <modules>
-        <module>basic</module>
-        <module>jp4da-android</module>
+        <!--<module>demos</module>-->
+        <module>examples</module>
+        <!--<module>jp4da-android</module>
         <module>jp4da-core</module>
         <module>jp4da-desktop</module>
-        <module>redbook</module>
-        <module>trivial-test</module>
+        <module>trivial-test</module>-->
     </modules>
 
 </project>

@@ -6,7 +6,6 @@ import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.*;
 import com.jogamp.opengl.fixedfunc.GLMatrixFunc;
 import com.jogamp.opengl.util.FPSAnimator;
-import org.junit.Test;
 
 public class TestJOGL {
     private static GLWindow makeWindow(
@@ -85,10 +84,9 @@ public class TestJOGL {
         return window;
     }
 
-    @Test
-    public void go()
-            throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         final GLWindow window0 = TestJOGL.makeWindow("Window 0");
         Thread.sleep(1000);
     }
+
 }
